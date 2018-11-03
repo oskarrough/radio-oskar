@@ -59,8 +59,8 @@ export default function(props) {
 
 	function tick() {
 		console.log('tick')
-		player && player.getCurrentTime().then(time => setCurrentTime(time))
-		player && player.getDuration().then(duration => setDuration(duration))
+		player && player.getCurrentTime().then(time => time && setCurrentTime(time))
+		player && player.getDuration().then(duration => duration && setDuration(duration))
 	}
 
 	return (

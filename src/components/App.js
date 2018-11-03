@@ -18,7 +18,7 @@ class App extends Component {
 								{title ? '' : 'Loading...'}
 								{title}
 							</p>
-							<p>{body}</p>
+							<p>{body}&nbsp;</p>
 							<TimeDisplay time={currentTime} duration={duration} />
 						</div>
 					)}

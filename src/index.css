@@ -3,11 +3,12 @@
 }
 
 html {
+	background: black url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_80,fl_awebp/drz0qs9lgscyfdztr17t.webp") no-repeat center;
+	background-size: cover;
+	color: #dadada;
+  font-family: system-ui;
 	font-size: 20px;
 	line-height: 1;
-  font-family: system-ui;
-	background: black;
-	color: #dadada;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
 }
 
 .Boxes > * {
+	background: black;
 	border: 1px solid #dadada;
 	margin: 1rem;
 }
