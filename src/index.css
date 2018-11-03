@@ -4,10 +4,11 @@
 
 html {
 	min-height: 100%;
-	background: black url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_80,fl_awebp/drz0qs9lgscyfdztr17t.webp") no-repeat center;
+	background-color: black;
+	background: url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_80,fl_awebp/drz0qs9lgscyfdztr17t.webp") no-repeat center;
 	background-size: cover;
 	color: #dadada;
-  font-family: system-ui;
+  font-family: system-ui, segoe ui, sans-serif;
 	font-size: 20px;
 	line-height: 1;
 }
@@ -31,3 +32,22 @@ body {
 	border-bottom: 1px solid;
 }
 
+
+.Tags {
+	/* margin-top: -1px; */
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.Tags button {
+	background: black;
+	color: inherit;
+	border: 0;
+	outline: 1px solid #dadada;
+	min-height: 1.2rem;
+}
+
+.Tags button small {
+	font-size: 1em;
+	color: white;
+}

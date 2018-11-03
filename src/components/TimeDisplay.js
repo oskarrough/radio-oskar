@@ -7,7 +7,6 @@ export default function({time, duration, ...props}) {
 		setProgress((time / duration) * 100)
 	}, [time])
 
-	// console.log(progress)
 	// todo: output like 6:13 / 8:53
 
 	return (

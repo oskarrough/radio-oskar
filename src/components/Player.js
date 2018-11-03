@@ -35,17 +35,13 @@ export default function(props) {
 		[retries]
 	)
 
-	function autoplay() {
-		document.querySelector('.Btn--next').click()
-	}
-
 	// Once player is registered, subscribe to events.
 	let [player, setPlayer] = useState(undefined)
 	useEffect(
 		() => {
 			let timer
 			if (player) {
-				// autoplay()
+				document.querySelector('.Btn--next').click()
 				player.on('stateChange', onPlayerStateChange)
 				timer = setInterval(tick, 1000)
 			}

@@ -9,22 +9,22 @@ let colors = {
 	'5': '#FF6DOO' // video cued = orange
 }
 
-let labels = {
-	'-1': 'Unstarted',
-	'0': 'Ended',
-	'1': 'Playing',
-	'2': 'Paused',
-	'3': 'Buffering',
-	'5': 'Video cued'
-}
+// let labels = {
+// 	'-1': 'Unstarted',
+// 	'0': 'Ended',
+// 	'1': 'Playing',
+// 	'2': 'Paused',
+// 	'3': 'Buffering',
+// 	'5': 'Video cued'
+// }
 
 export default function({status, ...props}) {
 	let [color, setColor] = useState('initial')
-	let [label, setLabel] = useState('Unstarted')
+	// let [label, setLabel] = useState('Unstarted')
 
 	useEffect(() => {
 		setColor(colors[status])
-		setLabel(labels[status])
+		// setLabel(labels[status])
 	}, [status])
 
 	return (
