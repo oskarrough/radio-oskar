@@ -15,7 +15,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier src/**.js --write"
+    "prettier": "prettier src/**.js --write",
+    "now-start": "serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,6 +28,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "prettier": "^1.14.3"
+    "prettier": "^1.14.3",
+    "serve": "^10.0.2"
   }
 }
