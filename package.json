@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "async-retry": "^1.2.3",
+    "radio4000-player": "^0.6.2",
+    "react": "^16.7.0-alpha.0",
+    "react-cache": "^2.0.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0",
     "react-scripts": "2.1.1"
   },
   "scripts": {

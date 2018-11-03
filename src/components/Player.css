@@ -1,0 +1,71 @@
+radio4000-player {
+  width: auto !important;
+  margin: 1rem;
+  background: #111;
+  color: #dadada;
+}
+
+radio4000-player .Layout-header {
+  display: none;
+}
+
+radio4000-player .Header {
+	background-color: initial !important;
+}
+
+radio4000-player .Header-logo {
+	opacity: 0.5 !important;
+}
+
+radio4000-player .Header svg {
+	fill: white !important;
+	/* fill: #5d1ae6 !important; */
+}
+
+radio4000-player .Layout-footer {
+	order: -1;
+	border-bottom: 1px solid;
+	margin-bottom: 1rem;
+}
+
+
+.TrackList {
+  font-size: 1rem;
+}
+
+radio4000-player .TrackList-item {
+  border-bottom-color: hsla(0, 0%, 50%, 0.3) !important;
+}
+
+radio4000-player a.TrackItem {
+  color: #dadada !important;
+}
+
+.TrackItem.active {
+  background-color: #5d1ae6 !important;
+}
+
+.TrackItem.active .TrackItem-body {
+	color: #dadada;
+}
+
+.PlayerControl {
+	border-top: 0 !important;
+  background: none !important;
+}
+
+.PlayerControl .Btn {
+  background: none;
+  color: #dadada;
+}
+
+.PlayPause-controller::before,
+.PlayPause-controller::after {
+  border-left-color: #dadada !important;
+}
+
+.PlayerControl-group:nth-child(1),
+.PlayerControl-group:nth-child(2) {
+  display: none;
+}
+
