@@ -1,7 +1,7 @@
 radio4000-player {
   width: auto !important;
   margin: 1rem;
-  background: black;
+  background: black !important;
   color: #dadada;
 }
 
@@ -22,12 +22,15 @@ radio4000-player .Header svg {
 	/* fill: #5d1ae6 !important; */
 }
 
+radio4000-player .Layout-main {
+	display: none;
+}
+
 radio4000-player .Layout-footer {
 	order: -1;
 	border-bottom: 1px solid;
 	margin-bottom: 1rem;
 }
-
 
 .TrackList {
   font-size: 1rem;
@@ -55,7 +58,7 @@ radio4000-player a.TrackItem {
 }
 
 .PlayerControl .Btn {
-  background: none;
+  background: none !important;
   color: #dadada;
 }
 
@@ -66,6 +69,6 @@ radio4000-player a.TrackItem {
 
 .PlayerControl-group:nth-child(1),
 .PlayerControl-group:nth-child(2) {
-  display: none;
+  display: none !important;
 }
 

@@ -6,4 +6,3 @@ export function useTimer(callback, miliseconds = 1000) {
 		return () => clearTimeout(timeout)
 	}, [])
 }
-

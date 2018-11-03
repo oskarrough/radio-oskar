@@ -3,6 +3,7 @@
 }
 
 html {
+	min-height: 100%;
 	background: black url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_80,fl_awebp/drz0qs9lgscyfdztr17t.webp") no-repeat center;
 	background-size: cover;
 	color: #dadada;
@@ -17,7 +18,16 @@ body {
 
 .Boxes > * {
 	background: black;
-	border: 1px solid #dadada;
-	margin: 1rem;
+	border: 1px solid;
+	border-bottom: 0;
+	margin: 0 1rem;
+}
+
+.Box--padding {
+	padding: 0.25rem 0.3rem;
+}
+
+.Boxes > *:last-child {
+	border-bottom: 1px solid;
 }
 

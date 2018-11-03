@@ -13,12 +13,11 @@ class App extends Component {
 					slug={RADIO}
 					render={({title, body, status, currentTime, duration}) => (
 						<div className="Boxes">
-							<StatusIndicator status={status} />
-							<p>
+							<StatusIndicator status={status} className="Box--padding" />
+							<p className="Box--padding">
 								{title ? '' : 'Loading...'}
-								{title}
+								{title} <span style={{opacity: 0.7}}>{body}</span>
 							</p>
-							<p>{body}&nbsp;</p>
 							<TimeDisplay time={currentTime} duration={duration} />
 						</div>
 					)}

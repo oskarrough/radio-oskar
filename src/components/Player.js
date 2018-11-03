@@ -35,12 +35,17 @@ export default function(props) {
 		[retries]
 	)
 
+	function autoplay() {
+		document.querySelector('.Btn--next').click()
+	}
+
 	// Once player is registered, subscribe to events.
 	let [player, setPlayer] = useState(undefined)
 	useEffect(
 		() => {
 			let timer
 			if (player) {
+				// autoplay()
 				player.on('stateChange', onPlayerStateChange)
 				timer = setInterval(tick, 1000)
 			}
@@ -57,15 +62,15 @@ export default function(props) {
 		setStatus(event.data)
 	}
 
+	// Runs once every second.
 	function tick() {
-		console.log('tick')
 		player && player.getCurrentTime().then(time => time && setCurrentTime(time))
 		player && player.getDuration().then(duration => duration && setDuration(duration))
 	}
 
 	return (
 		<div>
-			<radio4000-player ref={ref} channel-slug={props.slug} shuffle="true" autoplay="true" />
+			<radio4000-player ref={ref} channel-slug={props.slug} shuffle="true" />
 			{props.render({title: track.title, body: track.body, status, currentTime, duration})}
 		</div>
 	)

@@ -28,9 +28,7 @@ export default function({status, ...props}) {
 	}, [status])
 
 	return (
-		<div style={{backgroundColor: color}} {...props}>
-			{label.length} &rarr; {label}
-		</div>
+		<div style={{backgroundColor: color}} {...props}></div>
 	)
 }
 
