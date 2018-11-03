@@ -4,8 +4,7 @@
 
 html {
 	min-height: 100%;
-	background-color: black;
-	background: url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_80,fl_awebp/drz0qs9lgscyfdztr17t.webp") no-repeat center;
+	background: black url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_75,fl_awebp/drz0qs9lgscyfdztr17t.jpg") no-repeat center;
 	background-size: cover;
 	color: #dadada;
   font-family: system-ui, segoe ui, sans-serif;
@@ -16,6 +15,8 @@ html {
 body {
   margin: 0;
 }
+
+/* Boxes */
 
 .Boxes > * {
 	background: black;
@@ -32,9 +33,9 @@ body {
 	border-bottom: 1px solid;
 }
 
+/* Tags */
 
 .Tags {
-	/* margin-top: -1px; */
 	display: flex;
 	flex-flow: row wrap;
 }
@@ -51,3 +52,5 @@ body {
 	font-size: 1em;
 	color: white;
 }
+
+/* Also see Player.css */
