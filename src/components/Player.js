@@ -1,5 +1,4 @@
 import React, {useState, useEffect, useRef} from 'react'
-// import {useTimer} from '../use-timer'
 import 'radio4000-player'
 import './Player.css'
 
@@ -8,47 +7,38 @@ export default function(props) {
 
 	// Set track on track changed event.
 	let [track, setTrack] = useState({})
-	useEffect(
-		() => {
-			ref.current.addEventListener('trackChanged', ({detail}) => {
-				let {track} = detail[0]
-				if (track) setTrack(track)
-			})
-		},
-		[props.slug]
-	)
+	useEffect(() => {
+		ref.current.addEventListener('trackChanged', ({detail}) => {
+			let {track} = detail[0]
+			if (track) setTrack(track)
+		})
+	}, [props.slug])
 
 	// R4player doesn't give access to the youtube player.
 	// Getting it is complicated.
 	const maxRetries = 10
 	const timeout = 200
 	let [retries, setRetries] = useState(0)
-	useEffect(
-		() => {
-			let instance = findYouTubePlayer(ref.current)
-			if (instance && !player) {
-				setPlayer(instance)
-			} else if (retries <= maxRetries) {
-				setTimeout(() => setRetries(retries + 1), timeout)
-			}
-		},
-		[retries]
-	)
+	useEffect(() => {
+		let instance = findYouTubePlayer(ref.current)
+		if (instance && !player) {
+			setPlayer(instance)
+		} else if (retries <= maxRetries) {
+			setTimeout(() => setRetries(retries + 1), timeout)
+		}
+	}, [retries])
 
 	// Once player is registered, subscribe to events.
 	let [player, setPlayer] = useState(undefined)
-	useEffect(
-		() => {
-			let timer
-			if (player) {
-				document.querySelector('.Btn--next').click()
-				player.on('stateChange', onPlayerStateChange)
-				timer = setInterval(tick, 1000)
-			}
-			return () => clearInterval(timer)
-		},
-		[player]
-	)
+	useEffect(() => {
+		let timer
+		if (player) {
+			if (props.autoplay) document.querySelector('.Btn--next').click()
+			player.on('stateChange', onPlayerStateChange)
+			timer = setInterval(tick, 1000)
+		}
+		return () => clearInterval(timer)
+	}, [player])
 
 	// Track status, time and duration.
 	let [status, setStatus] = useState(-1)
@@ -66,7 +56,7 @@ export default function(props) {
 
 	return (
 		<div>
-			<radio4000-player ref={ref} channel-slug={props.slug} shuffle="true" />
+			<radio4000-player ref={ref} channel-slug={props.slug} />
 			{props.render({title: track.title, body: track.body, status, currentTime, duration})}
 		</div>
 	)

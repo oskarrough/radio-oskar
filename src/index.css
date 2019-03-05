@@ -4,12 +4,15 @@
 
 html {
 	min-height: 100%;
-	background: black url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_75,fl_awebp/drz0qs9lgscyfdztr17t.jpg") no-repeat center;
-	background-size: cover;
-	color: #dadada;
   font-family: system-ui, segoe ui, sans-serif;
 	font-size: 20px;
 	line-height: 1;
+	background-color: black;
+	/* background-image: url("https://res.cloudinary.com/radio4000/image/upload/c_thumb,q_75,fl_awebp/drz0qs9lgscyfdztr17t.jpg"); */
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: #dadada;
 }
 
 body {
@@ -53,4 +56,12 @@ body {
 	color: white;
 }
 
+.Tracks {
+	display: flex;
+	flex-wrap: wrap;
+}
+.Tracks span {
+}
+
 /* Also see Player.css */
+

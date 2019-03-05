@@ -23,7 +23,7 @@ radio4000-player .Header svg {
 }
 
 radio4000-player .Layout-main {
-	display: none;
+	/* display: none; */
 }
 
 radio4000-player .Layout-footer {

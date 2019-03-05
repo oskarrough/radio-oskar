@@ -6,6 +6,7 @@
     "async-retry": "^1.2.3",
     "lodash": "^4.17.11",
     "radio4000-player": "^0.6.2",
+    "radio4000-sdk": "^0.1.0",
     "react": "^16.7.0-alpha.0",
     "react-cache": "^2.0.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
