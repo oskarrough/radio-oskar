@@ -20,9 +20,9 @@ class App extends Component {
 							{title ? '' : 'Loading...'}
 							{title} <span style={{opacity: 0.7}}>{body}</span>
 						</p>
-						<Chat url="https://chat-bystzqvodk.now.sh/" />
 						<TimeDisplay time={currentTime} duration={duration} />
 						<StatusIndicator status={status} className="Box--padding" />
+						<Chat url="https://chat-bystzqvodk.now.sh/" />
 						<Tags />
 						<Tracks />
 					</div>

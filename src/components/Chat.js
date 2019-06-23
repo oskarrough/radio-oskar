@@ -2,7 +2,7 @@ import React from 'react'
 
 export default props => {
 	// return <div className="RoughChat" url={props.url} />
-	return <iframe width="100%" border="0" src={props.url} />
+	return <iframe border="0" src={props.url} />
 }
 
 // var template = `
