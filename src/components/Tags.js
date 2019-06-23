@@ -40,9 +40,14 @@ export default function(props) {
 		<div className="Tags">
 			{tags.length
 				? tags.map(tag => (
-						<button key={tag.name}>
+						<a
+							key={tag.name}
+							href={'https://radio4000.com/oskar/tracks?search=' + tag.name}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							{tag.name} <small>{tag.count}</small>
-						</button>
+						</a>
 				  ))
 				: 'Loading tags'}
 		</div>

@@ -16,24 +16,23 @@ html {
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 /* Boxes */
 
+.Boxes {
+}
+
 .Boxes > * {
 	background: black;
 	border: 1px solid;
-	border-bottom: 0;
-	margin: 0 1rem;
+	margin: 0;
+	margin: 0.5rem;
 }
 
 .Box--padding {
 	padding: 0.25rem 0.3rem;
-}
-
-.Boxes > *:last-child {
-	border-bottom: 1px solid;
 }
 
 /* Tags */
@@ -41,14 +40,20 @@ body {
 .Tags {
 	display: flex;
 	flex-flow: row wrap;
+	line-height: 1.5;
 }
 
+.Tags a,
 .Tags button {
+	display: inline-flex;
 	background: black;
 	color: inherit;
 	border: 0;
+	padding: 0 0.3em;
 	outline: 1px solid #dadada;
-	min-height: 1.2rem;
+	/* min-height: 1.2rem; */
+	font-size: small;
+	text-decoration: none;
 }
 
 .Tags button small {
