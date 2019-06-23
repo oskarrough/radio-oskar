@@ -1,12 +1,12 @@
 radio4000-player {
-  width: auto !important;
-  margin: 1rem;
-  background: black !important;
-  color: #dadada;
+	width: auto !important;
+	background: black !important;
+	color: #dadada;
+	margin: 0.5rem !important;
 }
 
 radio4000-player .Layout-header {
-  display: none;
+	display: none;
 }
 
 radio4000-player .Header {
@@ -33,19 +33,19 @@ radio4000-player .Layout-footer {
 }
 
 .TrackList {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 
 radio4000-player .TrackList-item {
-  border-bottom-color: hsla(0, 0%, 50%, 0.3) !important;
+	border-bottom-color: hsla(0, 0%, 50%, 0.3) !important;
 }
 
 radio4000-player a.TrackItem {
-  color: #dadada !important;
+	color: #dadada !important;
 }
 
 .TrackItem.active {
-  background-color: #5d1ae6 !important;
+	background-color: #5d1ae6 !important;
 }
 
 .TrackItem.active .TrackItem-body {
@@ -54,21 +54,20 @@ radio4000-player a.TrackItem {
 
 .PlayerControl {
 	border-top: 0 !important;
-  background: none !important;
+	background: none !important;
 }
 
 .PlayerControl .Btn {
-  background: none !important;
-  color: #dadada;
+	background: none !important;
+	color: #dadada;
 }
 
 .PlayPause-controller::before,
 .PlayPause-controller::after {
-  border-left-color: #dadada !important;
+	border-left-color: #dadada !important;
 }
 
 .PlayerControl-group:nth-child(1),
 .PlayerControl-group:nth-child(2) {
-  display: none !important;
+	display: none !important;
 }
-

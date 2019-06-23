@@ -4,7 +4,7 @@
 
 html {
 	min-height: 100%;
-  font-family: system-ui, segoe ui, sans-serif;
+	font-family: system-ui, segoe ui, sans-serif;
 	font-size: 20px;
 	line-height: 1;
 	background-color: black;
@@ -64,4 +64,3 @@ body {
 }
 
 /* Also see Player.css */
-

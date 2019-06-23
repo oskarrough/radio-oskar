@@ -22,13 +22,13 @@ export default function({status, ...props}) {
 	let [color, setColor] = useState('initial')
 	// let [label, setLabel] = useState('Unstarted')
 
-	useEffect(() => {
-		setColor(colors[status])
-		// setLabel(labels[status])
-	}, [status])
-
-	return (
-		<div style={{backgroundColor: color}} {...props}></div>
+	useEffect(
+		() => {
+			setColor(colors[status])
+			// setLabel(labels[status])
+		},
+		[status]
 	)
-}
 
+	return <div style={{backgroundColor: color}} {...props} />
+}
